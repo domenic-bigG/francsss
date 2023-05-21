@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <!-- COOKIEBOT -->
+
+    <!-- GOOGLE ANALYTICS -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <script>
+        $(function () {
+            $(".header").load("includes/header.html", function () {
+
+                const headerHamb = document.querySelector('.header-hamb');
+                const headerNav = document.querySelector('.header-nav');
+                const headerNavFiller = document.querySelector('.header-nav-filler');
+
+                headerHamb.addEventListener('click', function () {
+                    headerHamb.classList.toggle('is-active');
+                    headerNav.classList.toggle('is-active');
+                    headerNavFiller.classList.toggle('is-active');
+                });
+
+                headerNavFiller.addEventListener('click', function () {
+                    headerHamb.classList.toggle('is-active');
+                    headerNav.classList.toggle('is-active');
+                    headerNavFiller.classList.toggle('is-active');
+                });
+                
+            });
+            $(".footer").load("includes/footer.html");
+        });
+    </script>
+
+    <!-- #3f3d56 -->
+</head>
+
+<body>
+    <div id="load">
+        <span class="loader"></span>
+    </div>
+
+    <div class="header"></div>
+    <div class="header-filler"></div>
+
+    <div class="hero">
+        <div class="hero-content">
+            <div class="hero-box">
+                <div id="hero-title">
+                    SOS PULITO - Impresa Di Pulizie Nel Tigullio
+                </div>
+                <div id="hero-text">
+                    Siamo un'impresa specializzata nella pulizia e manutenzione di pavimentazioni.
+                    La nostra esperienza e professionalità garantiscono risultati di alta qualità.
+                </div>
+                <button id="hero-btn" onclick="location.href=''">RICHIEDI UN PREVENTIVO</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="services">
+        <div class="services-content">
+            <div class="services-first-title">I Nostri Servizi</div>
+            <div class="services-flex">
+                <div class="services-flex-itm">
+                    <img id="services-flex-img" src="img/services.png" draggable="false">
+                    <div id="services-flex-title">
+                        Trattamenti per pavimenti
+                    </div>
+                    <div id="services-flex-text">
+                        Trattamenti avanzati per pavimenti in marmo, cotto, veneziano e ardesia.
+                    </div>
+                    <a id="services-flex-link" href="">
+                        Leggi di più ➞
+                    </a>
+                </div>
+                <div class="services-flex-itm">
+                    <img id="services-flex-img" src="img/services.png" draggable="false">
+                    <div id="services-flex-title">
+                        Pulizie di fine cantiere
+                    </div>
+                    <div id="services-flex-text">
+                        Pulizia post-cantiere per eliminare lo sporco e le impurità dopo i lavori di ristrutturazione o
+                        costruzione.
+                    </div>
+                    <a id="services-flex-link" href="">
+                        Leggi di più ➞
+                    </a>
+                </div>
+                <div class="services-flex-itm">
+                    <img id="services-flex-img" src="img/services.png" draggable="false">
+                    <div id="services-flex-title">
+                        Pulizie esterne
+                    </div>
+                    <div id="services-flex-text">
+                        Pulizia esterna professionale per mantenere pulito e in ordine il tuo spazio esterno.
+                    </div>
+                    <a id="services-flex-link" href="">
+                        Leggi di più ➞
+                    </a>
+                </div>
+                <div class="services-flex-itm">
+                    <img id="services-flex-img" src="img/services.png" draggable="false">
+                    <div id="services-flex-title">
+                        Servizi di pulizia personalizzati
+                    </div>
+                    <div id="services-flex-text">
+                        Tutti i servizi possono essere personalizzati in base alle esigenze del cliente.
+                    </div>
+                    <a id="services-flex-link" href="">
+                        Leggi di più ➞
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutus">
+        <div class="aboutus-content">
+            <div class="aboutus-left">
+                <img id="aboutus-left-img" src="img/aboutus.jpg" draggable="false">
+            </div>
+            <div class="aboutus-right">
+                <div id="aboutus-title">
+                    Chi Siamo
+                </div>
+                <div id="aboutus-text">
+                    Siamo due giovani imprenditrici specializzate nel settore da oltre 10 anni. Il nostro obiettivo è
+                    sempre lo stesso: soddisfare le esigenze di tutti i nostri clienti svolgendo un lavoro impeccabile,
+                    offrendo un altissima qualità di tutte le lavorazioni svolte, rispettando sempre i tempi stabiliti.
+                    Il nostro lavoro è per noi una vera e propria passione, per questo motivo gentilezza e
+                    professionalità sono essenziali a rendere un ottimo servizio, oltre all utilizzo di macchinari e
+                    prodotti professionali e di alta gamma. Siamo operative in tutta Italia.
+                </div>
+                <a id="aboutus-link" href="">
+                    Chi siamo ➞
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="calltoaction">
+        <div class="calltoaction-content">
+            <div id="calltoaction-title">
+                Richiedi ora il tuo preventivo gratuito e scopri come possiamo garantire la pulizia perfetta per te.
+                Contattaci oggi stesso!
+            </div>
+            <button id="calltoaction-btn">RICHIEDI UN PREVENTIVO</button>
+        </div>
+    </div>
+
+    <div class="footer"></div>
+
+    <script src="script.js"></script>
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>
